@@ -48,6 +48,6 @@ POST 실행결과
 - "kkang0"이라는 새로운 유튜버가 등록
 
 GET 실행결과
-![kkang_get](../img/kkang_get.png)
+![kkang_get](../img/4-3-2.png)
 
 - 4번 id에 "kkang0"이 새로 조회됨
