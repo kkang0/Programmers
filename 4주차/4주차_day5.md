@@ -160,13 +160,14 @@ app.delete("/users/:id", function (req, res) {
     res.status(404).json({
       message: `회원 정보가 없습니다.`,
     });
-  } else {
-    db.delete(id);
 
-    res.status(200).json({
-      message: `${user.name}님 다음에 또 뵙겠습니다.`,
-    });
+    return;
   }
+  db.delete(id);
+
+  res.status(200).json({
+    message: `${user.name}님 다음에 또 뵙겠습니다.`,
+  });
 });
 ```
 
