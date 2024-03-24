@@ -24,6 +24,7 @@ console.log(Object.keys(str2).length === 0);
 ```
 
 (실행결과)
+
 ![isEmptyObj](../img/5주차_img/5-1-1.png)
 
 ❗️ 함수를 사용하는 방법도 있음
