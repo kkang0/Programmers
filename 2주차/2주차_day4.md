@@ -2,7 +2,7 @@
 
 ### 1️⃣ 웹 (백엔드)
 
-![backend](../img/Untitled.png)
+![backend](../img/2주차_img/2-4-1.png)
 
 - **웹 서버(Web Server)** : 정적 페이지에 대응하여 웹 애플리케이션 서버에게 전달
 

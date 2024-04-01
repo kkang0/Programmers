@@ -40,4 +40,4 @@ console.log(map.get(3));
 ```
 
 실행결과
-  ![output_map](../img/output_map.png)
+![output_map](../img/4주차_img/4-1-1.png)

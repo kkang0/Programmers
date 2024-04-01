@@ -15,10 +15,10 @@
 ### 4️⃣ 도커(docker)
 
 컨테이너 이미지는 코드, 런타임, 시스템 도구, 시스템 라이브러리 및 설정 등 애플리케이션을 실행하는 데 필요한 모든 것을 포함하는 경량의 독립형 실행 가능 소프트웨어 패키지
-![docker](../img/docker.png)
+![docker](../img/2주차_img/2-5-1.png)
 
-- 도커로 mariadb 실행 ![docker_db1](../img/docker_db1.png)
-  ![docker_db2](../img/docker_db2.png)
+- 도커로 mariadb 실행 ![docker_db1](../img/2주차_img/2-5-2.png)
+  ![docker_db2](../img/2주차_img/2-5-3.png)
   ✨ mariadb실행 ✨ mariadb -u root -p
 
 ### 5️⃣ 데이터베이스 조회, 생성, 들어가기

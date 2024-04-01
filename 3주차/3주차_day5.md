@@ -46,4 +46,4 @@ app.get("/hello", function (req, res) {
 ```
 
 - 실행결과
-  ![json_output](../img/3-5-1.png)
+  ![json_output](../img/3주차_img/3-5-1.png)

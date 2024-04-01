@@ -75,7 +75,7 @@ app.post("/users", (req, res) => {
 ```
 
 (실행 결과)
-![post_exception](../img/4-5-1.png)
+![post_exception](../img/4주차_img/4-5-1.png)
 
 ### 6️⃣ 미니 프로젝트
 
@@ -116,7 +116,7 @@ app.post("/join", (req, res) => {
 ```
 
 (실행 결과)
-![join](../img/4-5-2.png)
+![join](../img/4주차_img/4-5-2.png)
 
 ### 8️⃣ 회원 개별 조회
 
@@ -143,10 +143,10 @@ app.get("/users/:id", function (req, res) {
 
 (실행결과)
 존재하는 회원(1)의 id입력
-![get_success](../img/4-5-3.png)
+![get_success](../img/4주차_img/4-5-3.png)
 
 존재하지 않은 회원(2)의 id입력
-![get_fail](../img/4-5-4.png)
+![get_fail](../img/4주차_img/4-5-4.png)
 
 ### 9️⃣ 회원 개별 탈퇴
 
@@ -173,10 +173,10 @@ app.delete("/users/:id", function (req, res) {
 
 (실행결과)
 존재하지 않은 회원(id)이 탈퇴했을 때
-![delete_fail](../img/4-5-5.png)
+![delete_fail](../img/4주차_img/4-5-5.png)
 
 존재하는 회원(id)이 탈퇴했을 때
-![delete_success](../img/4-5-6.png)
+![delete_success](../img/4주차_img/4-5-6.png)
 
 방금 탈퇴한 회원(id)을 가지고 다시 탈퇴했을 때
-![delete_onemore](../img/4-5-7.png)
+![delete_onemore](../img/4주차_img/4-5-7.png)

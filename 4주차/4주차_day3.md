@@ -18,7 +18,7 @@
     });
     ```
 
-    ![post](../img/post.png)
+    ![post](../img/4주차_img/4-3-1.png)
 
 ### 2️⃣ POST 기능을 추가한 API 설계
 
@@ -43,11 +43,11 @@ app.post("/youtuber", (req, res) => {
 ```
 
 POST 실행결과
-![kkang_post](../img/kkang_post.png)
+![kkang_post](../img/4주차_img/4-3-2.png)
 
 - "kkang0"이라는 새로운 유튜버가 등록
 
 GET 실행결과
-![kkang_get](../img/4-3-2.png)
+![kkang_get](../img/4주차_img/4-3-3.png)
 
 - 4번 id에 "kkang0"이 새로 조회됨

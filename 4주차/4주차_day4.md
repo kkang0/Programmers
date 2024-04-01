@@ -16,7 +16,7 @@ app.get("/youtubers", function (req, res) {
 ```
 
 실행결과
-![maptojson](../img/4-4-1.png)
+![maptojson](../img/4주차_img/4-4-1.png)
 
 ### 2️⃣ forEach() 메서드
 
@@ -36,7 +36,7 @@ map()과 달리 forEach()는 항상 undefined를 반환하므로 체이닝할 �
 
 - 출력 결과
 
-  ![foreach_output](../img/4-4-2.png)
+  ![foreach_output](../img/4주차_img/4-4-2.png)
 
 ### 3️⃣ map() 메서드
 
@@ -56,7 +56,7 @@ map()과 달리 forEach()는 항상 undefined를 반환하므로 체이닝할 �
   ```
 
 - 출력 결과
-  ![map_foreach](../img/4-4-3.png)
+  ![map_foreach](../img/4주차_img/4-4-3.png)
 
 ### 4️⃣ DELETE 기능을 추가한 API 설계
 
@@ -91,7 +91,7 @@ app.delete("/youtubers/:id", function (req, res) {
 ```
 
 - 실행결과
-  ![delete_output](../img/4-4-4.png)
+  ![delete_output](../img/4주차_img/4-4-4.png)
   url에 4번 id를 주었더니, 4번 유튜버가 삭제됨
 
 ### 6️⃣ 리팩토링 (Refactoring)
