@@ -133,3 +133,8 @@ let decoded = jwt.verify(token, process.env.PRIVATE_KEY);
 ```
 
 ### 8️⃣ JWT - 유튜브 적용
+
+일단은 회원 로그인할 때 정보를 token값을 body로 보내도록 함
+![실습](../img/6주차_img/6-3-9.png)
+
+- token이 잘 출력된 것을 볼 수 있다.
