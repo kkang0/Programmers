@@ -36,24 +36,29 @@ request body에 (여러 개) 선택한 장바구니 상품 id들을 리스트로
 | URI | /cart |
 | HTTP status code | 성공(200) |
 | Request Body | [ cartItemId, cartItemId, … ] |
-| Response Body | {
-[
-cartItemId: “장바구니 도서 id”,
-bookId: “도서 id”,
-title: “도서 제목”,
-summary: “요약 정보”,
-price: “가격”,
-count: “도서 수량”
-],
-[
-cartItemId: “장바구니 도서 id”,
-bookId: “도서 id”,
-title: “도서 제목”,
-summary: “요약 정보”,
-price: “가격”,
-count: “도서 수량”
-], …
-} |
+| Response Body | 아래 참고 |
+
+- response body
+  ```JSON
+  {
+    [
+        cartItemId: “장바구니 도서 id”,
+        bookId: “도서 id”,
+        title: “도서 제목”,
+        summary: “요약 정보”,
+        price: “가격”,
+        count: “도서 수량”
+    ],
+    [
+        cartItemId: “장바구니 도서 id”,
+        bookId: “도서 id”,
+        title: “도서 제목”,
+        summary: “요약 정보”,
+        price: “가격”,
+        count: “도서 수량”
+    ], …
+  }
+  ```
 
 ## ✔️ 결제 API
 
@@ -65,26 +70,31 @@ count: “도서 수량”
 | --- | --- |
 | URI | /orders |
 | HTTP status code | 성공(200) |
-| Request Body | {
-items: [{
-cartItem: “장바구니 도서 id”,
-bookId: “도서 id”,
-count: 수량
-},
-{
-cartItem: “장바구니 도서 id”,
-bookId: “도서 id”,
-count: 수량
-}, …
-],
-delivery: {
-address: “주소”,
-recipient: “수령인”,
-contact: “전화번호”
-},
-totalPrice: 총 금액
-} |
+| Request Body | 아래 참고 |
 | Response Body | |
+
+- request body
+  ```JSON
+  {
+    items: [{
+        cartItem: “장바구니 도서 id”,
+        bookId: “도서 id”,
+        count: 수량
+        },
+        {
+        cartItem: “장바구니 도서 id”,
+        bookId: “도서 id”,
+        count: 수량
+        }, …
+    ],
+    delivery: {
+        address: “주소”,
+        recipient: “수령인”,
+        contact: “전화번호”
+    },
+    totalPrice: 총 금액
+  }
+  ```
 
 💡 장바구니에서 주문(결제) 완료된 상품은 장바구니 DB에서 삭제된다.
 
@@ -97,23 +107,27 @@ totalPrice: 총 금액
 | URI              | /orders   |
 | HTTP status code | 성공(200) |
 | Request Body     |           |
-| Response Body    | [         |
+| Response Body    | 아래 참고 |
 
-    {
-        order_id: “주문 id”,
-        orderedDate: “주문 일자”,
-        delivery: {
-            address: “주소”,
-            recipient: “수령인”,
-            contact: “전화번호”
-        },
-        bookTitle: “대표 책 제목”,
-        totalPrice: “총 결제 금액”,
-        totalCount: “총 수량”
-    },
-    …
+- response body
 
-] |
+  ```JSON
+  [
+      {
+          order_id: “주문 id”,
+          orderedDate: “주문 일자”,
+          delivery: {
+              address: “주소”,
+              recipient: “수령인”,
+              contact: “전화번호”
+          },
+          bookTitle: “대표 책 제목”,
+          totalPrice: “총 결제 금액”,
+          totalCount: “총 수량”
+      },
+      …
+  ]
+  ```
 
 ### 3️⃣ **주문 상세 상품 조회 (주문 상세)**
 
@@ -123,23 +137,28 @@ totalPrice: 총 금액
 | URI | /orders/{bookId} |
 | HTTP status code | 성공(200) |
 | Request Body | |
-| Response Body | [
-{
-bookId: “도서 id”,
-bookTitle: “도서 제목”,
-author: “작가”,
-price: “가격”,
-count: “수량”
-},
-{
-bookId: “도서 id”,
-bookTitle: “도서 제목”,
-author: “작가”,
-price: “가격”,
-count: “수량”
-},
-…
-] |
+| Response Body | 아래 참고 |
+
+- response body
+  ```JSON
+  [
+    {
+        bookId: “도서 id”,
+        bookTitle: “도서 제목”,
+        author: “작가”,
+        price: “가격”,
+        count: “수량”
+    },
+    {
+        bookId: “도서 id”,
+        bookTitle: “도서 제목”,
+        author: “작가”,
+        price: “가격”,
+        count: “수량”
+    },
+    …
+  ]
+  ```
 
 # 📌 도서 DB 예시
 
